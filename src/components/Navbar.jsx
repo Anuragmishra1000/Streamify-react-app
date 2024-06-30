@@ -6,22 +6,28 @@ import SearchBar from './SearchBar'
 
 const Navbar = () => (
     <Stack
-        direction="row"
+        direction={{ xs: 'column', sm: 'row' }} // Stack direction changes based on screen size
         alignItems="center"
         p={2}
+        spacing={2} // Added spacing between items
         sx={{ position: 'sticky', background: '#000', top: 0, justifyContent: 'space-between' }}>
 
-        <Link to="/" style={{ display: 'flex', alignItems: 'center' }}>
+        <Link to="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
             <img src={logo} alt="logo" height={45} />
             <Typography variant='h6'
-                fontWeight="bold" ml={1.5} mb={2} mt={1}
-                sx={{ color: 'white'}}
+                fontWeight="bold" ml={{ xs: 0, sm: 1.5 }} mb={1} mt={{ xs: 1, sm: 0 }}
+                sx={{
+                    color: 'white',
+                    fontSize: { xs: '1rem', sm: '1.25rem', md: '1.5rem' }, // Responsive font size
+                    whiteSpace: 'nowrap', // Prevent text from wrapping
+                    overflow: 'hidden', // Hide overflow text
+                    textOverflow: 'ellipsis', // Add ellipsis for overflow text
+                }}
             >
                 Streamify
             </Typography>
         </Link>
         <SearchBar />
-
     </Stack>
 )
 

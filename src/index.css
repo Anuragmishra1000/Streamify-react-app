@@ -87,3 +87,24 @@ a {
         width: 200px;
     }
 }
+
+@media screen and (max-width: 456px) {
+    .search-bar {
+        /* display: flex; */
+        /* position: relative; */
+          margin-top: 7px;
+          margin-left: 10px;
+        font-size: small;
+        text-align: center;
+        
+    }
+}
+@media screen and (max-width: 456px) {
+    .search-icon {
+        /* display: flex; */
+        /* position: relative; */
+        margin-left: 200px;
+        margin-top: 50px;
+        
+    }
+}
