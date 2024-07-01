@@ -16,6 +16,11 @@ A clone of YouTube built using React.js, MUI 5. This project replicates key feat
 - **Video Playback**: Play videos with full-screen and volume control options.
 - **Recommendations**: Dynamically recommend related videos based on viewing history.
 
+### APIs Used
+
+This project utilizes the following APIs:
+- [Youtube v3](https://rapidapi.com/ytdlfree/api/youtube-v31) for fetching video data. Please refer to their [terms of service](https://rapidapi.com/terms) for usage guidelines and attribution requirements.
+
 ## Getting Started
 
 To get a local copy up and running, follow these simple steps:
